@@ -62,11 +62,11 @@ h4 {
 }
 
 body {
-  margin-top: 150px;
   font-family: Helvetica, Sans-Serif;
   background-color: #e6ccd3;
   padding: 50px;
 }
+
 #staffGallery{
   width: 70vw;
   display: inherit;
