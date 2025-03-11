@@ -3,236 +3,141 @@
   <html lang="en">
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Dropdown Menu Redesign</title>
+      <title>Persona and Storyboarding</title>
       <!-- import CSS styles -->
       <link rel="stylesheet" href="styles.css" /> 
       <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
     </head>
-  
-    <div class="header">
-      <h1>Accessible Components</h1>
-      <p>Redesigning a dropdown menu to be more accessible</p>
-    </div>
-  
-  
-    <!-- page content goes into <body> -->
-    
+
     <body>
-      <div id="intro">
-        <h4>I will be exploring the accessibility factors of a dropdown menu in the following
-          applications:
-        </h4>
-        <h4>Netflix</h4>
-        <h4>Apple Pages</h4>
-        <h4>Google Calendar</h4>
+      <!--The following block of code was found on https://css-tricks.com/snippets/svg/curved-text-along-path/-->
+      <svg viewBox="0 0 500 150">
+        <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+        <text width="500">
+          <textPath alignment-baseline="top" xlink:href="#curve">
+            How do users interact with an interface?
+          </textPath>
+        </text>
+      </svg>
+
+      <div class="button-container">
+        <!--The following block of code was found on https://stackoverflow.com/questions/16349490/html-css-buttons-that-scroll-down-to-different-div-sections-on-a-webpage-->
+      <input class="styled" type="button" value="Lets find out!" onClick="document.getElementById('text').scrollIntoView();" />
       </div>
+      <br>
+
+      <div id="text">
+        <p> I will be observing how people interact with a door with a keypad lock. Then I'll be creating interview questions, and conducting interviews.</p>
+      </div>
+      <br>
       
-      <h2>Netflix</h2>
-      <div class="flex-container">
-        <div><img class="galleryImage" src="./assets/netflix1.png"/></div>
-        <div><img class="galleryImage" src="./assets/netflix2.png"/></div>
-        <div><img class="galleryImage" src="./assets/netflix3.png"/></div>
+      <div class="image-cards">
+        <img src="./assets/keypad.jpeg" style="width:100%">
+        <img src="./assets/sketch.png" style="width:100%">
       </div>
       <br>
 
-      <h2>Pages</h2>
-      <div class="flex-container">
-        <div><img class="pageImage" src="./assets/pages1.png"/></div>
-        <div><img class="pageImage" src="./assets/pages2.png"/></div>
-        <div><img class="pageImage" src="./assets/pages3.png"/></div>
+      <div id="text">
+        <p> Here is a picture of the keypad, and a sketch</p>
+      </div>
+      <br>
+      
+      <h2>About the interface...</h2>
+      <div id="left-text">
+          <ul>
+            <li>The interface allows people to unlock the door with or without a key</li>
+            <li>The buttons turn green when they are pressed and make a noise</li>
+            <li>The entry is processed when the lock button is pressed</li>
+            <li>If the wrong password is entered → the buttons flash red three times and it beeps three times</li>
+            <li>If the right password is entered → the buttons light up green and the door unlocks</li>
+            <li>To lock the door the lock button is pressed</li>
+          </ul>
+      </div>
+      <br>
+      
+      <h2>Here is what I observed...</h2>
+      <div id="text">
+        <p>Users seem to first check the door to see if it is unlocked. The door handle moves, but the user has to lean into the door to see if it will open. 
+          Users who are in a rush are more likely to push harder on the door in this stage.
+
+          Users seem to press the buttons with their right pointer finger or right thumb. When locking the door, some seem to wait until the sound 
+          finishes of the door locking to leave, while others trust that the door will lock. I noticed that you can enter as many numbers as you want. 
+          Most users enter the code quickly and the button locations represent a pattern.
+          </p>
       </div>
       <br>
 
-      <h2>Google Calendar</h2>
-      <div class="flex-container">
-        <div><img class="galleryImage" src="./assets/gcal1.png"/></div>
-        <div><img class="galleryImage" src="./assets/gcal2.png"/></div>
-        <div><img class="galleryImage" src="./assets/gcal3.png"/></div>
-      </div>
-      <br>
-
-      <h2>Input:</h2>
+      <h2>Here is what I asked...</h2>
       <table>
         <tr>
           <th> </th>
-          <th>Google Calendar</th>
-          <th>Apple Pages</th>
-          <th>Netflix</th>
+          <th>Questions</th>
+          <th>Summary of Responses</th>
         </tr>
         <tr>
-          <th>Mouse/ Touchpad</th>
-          <td>There is no down arrow next to the time but it is boxed in some states.
-             In another state it does not seem like a drop down arrow will appear 
-             when you click on the time. However, to change the time you can click 
-             on a different time block in the calendar.</td>
-          <td>There is a down arrow next to the paragraph styles that makes it known 
-            that there will be a drop down menu.</td>
-          <td>There is a down arrow that makes it known that there will be a drop 
-            down menu if you want to select a genre.</td>
+          <th>1.</th>
+          <td>How often do you use your key vs keypad to unlock the door?
+          </td>
+          <td> There is another door to the apartment building that does not have a keypad. It automatically
+             locks so the user needs to have a set of keys accessible a few moments prior to unlocking the 
+             unit door. But to get into the unit door specifically, the keypad is used.</td>
         </tr>
         <tr>
-          <th>Keyboard</th>
-          <td>When you click on the time dropdown menu and move the up and down arrows
-             it moves through the options.
-            When the menu is pressed and you press the escape key, the menu closes.
-            </td>
-          <td>When you click on the “Paragraph Styles” dropdown menu and move the up 
-            and down arrows it moves the document instead of scrolling through the menu.
-            When the menu is pressed and you press the escape key, the menu closes.
-            </td>
-          <td>When you click on the “Genres” dropdown menu and move the up and down arrows 
-            it moves the webpage instead of scrolling through the menu.
-            When the menu is pressed and you press the escape key, the menu does not close.
-            </td>
+          <th>2.</th>
+          <td>How many attempts at unlocking the door do you average before it unlocks?</td>
+          <td>The users mainly unlock the door on the first try.</td>
         </tr>
         <tr>
-          <th>Touch (if available)</th>
-          <td>You can also change the time of your event on the app by more precisely 
-            changing the size of the box that is on the calendar.</td>
-          <td>While you are typing, a bar on top of the keyboard comes up where you 
-            can edit the text like bold/ how it is aligned/ italicized/ and also how 
-            the text is styled.</td>
-          <td>There isn’t the same menu on the mobile version. There is a “TV Shows” 
-            and “Movies” option, then “Category”.</td>
+          <th>3.</th>
+          <td>How do you feel about the size of the buttons?</td>
+          <td>The users are happy with the size of the buttons.</td>
+        </tr>
+        <tr>
+          <th>4.</th>
+          <td>Are you able to differentiate between the noises for an incorrect and correct entry?</td>
+          <td>The users note there is beep when the code is entered incorrectly.</td>
+        </tr>
+        <tr>
+          <th>5.</th>
+          <td>Can you tell when the door is unlocked vs locked from the outside?</td>
+          <td> The users cannot tell, however, the users feel it is okay that it is not displayed to other people 
+            passing by when their door is unlocked. For a typical door lock, it is not clear if the door is locked 
+            unless you try the door, and the same principle applies here.</td>
+        </tr>
+        <tr>
+          <th>6.</th>
+          <td>How do you feel about the security of the lock?</td>
+          <td>The users responded they felt the security of the door was good and no issue was raised. They explained
+             that maintenance people from the apartment building staff  have the code.</td>
         </tr>
       </table>
       <br>
 
-      <h2>Output:</h2>
-      <table>
-        <tr>
-          <th> </th>
-          <th>Google Calendar</th>
-          <th>Apple Pages</th>
-          <th>Netflix</th>
-        </tr>
-        <tr>
-          <th>Hovering</th>
-          <td>When you hover over the time, the box becomes a shade darker making it 
-            look clickable. It also has a line underneath it depending on the state it was previously in.</td>
-          <td>Nothing changes when you hover over the box.</td>
-          <td>When you hover over the “Genres” box, it becomes transparent.</td>
-        </tr>
-        <tr>
-          <th>VoiceOver</th>
-          <td>When using VoiceOver, “9:15pm, Start time, menu pop up collapsed, combo box” when the start time 
-            is clicked, “10:15pm, End time, menu pop up expanded, combo box, Event, tab panel” when the end time is selected.
-            </td>
-          <td>When the application opens, the VoiceOver begins by reading the document, which isn’t the best. I tried clicking
-             around the edit text option to prompt it to read the options, and it did not. After I clicked the “Paragraph Styles”
-              option, the VoiceOver read “3 items Paragraph Styles”. This was not the most accessible because there are so many 
-              options to click on the page and it would be hard to know where this option was. 
-            </td>
-          <td>When you enter the Netflix website, the VoiceOver starts by reading the top menu bar from left to right. Then it 
-            moves to the line below the menu bar and reads after the “Movies” option “Genres, menu pop up collapsed, button”. 
-            This seemed like the most accessible since the user might not know where this option is.
-            </td>
-        </tr>
-        <tr>
-          <th>Cue to click/ Appearence</th>
-          <td>The time does not look clickable, it is in a smaller font and there is no box around it. I think one has to be told 
-            this to know it unless they try tapping all over the screen, but after that it is easy to remember.
-          </td>
-          <td>You have to click on the Paragraph Styles Icon, which is not labelled, to pull up the menu. I think one has to be 
-            told this to know it, but after that it is easy to remember.
-            <div><img class="smallImage" src="./assets/paragraph.png"/></div>
-          </td>
-          <td>When you click on “Genres” a box is displayed with your selected choice. Then another menu comes up, “Category”. 
-            This was the most intuitive out of the three applications.</td>
-        </tr>
-      </table>
+      <div id="text">
+        <p> Then I made two empathy maps based on my observations and interviews.</p>
+      </div>
+      <br>
 
-      <h2>Current state models for the dropdown menu on Pages</h2>
+      <h2>Meet Betty and Neil...</h2>
+      <div class="image-cards">
+        <img src="./assets/betty.jpg" style="width:100%">
+        <img src="./assets/neil.jpg" style="width:100%">
+      </div>
+      <br>
+      
+      <h2>Lets take a closer look at Betty's journey...</h2>
       <div class="flex-container">
-        <div><img class="galleryImage" src="./assets/state1.png"/></div>
-        <div><img class="galleryImage" src="./assets/state2.png"/></div>
+        <div><img class="solo-image" src="./assets/storyboard.png"/></div>
       </div>
       <br>
 
-      <h2>Revised state models for the dropdown menu on Pages</h2>
-      <div class="flex-container">
-        <div><img class="galleryImage" src="./assets/state3.png"/></div>
-        <div><img class="galleryImage" src="./assets/state4.png"/></div>
+      <div id="text">
+        <p>I was surprised to find people were relatively satisfied with the interface. This makes sense since
+          the keypad lock is popular these days, especially as remote controlled door locks become more 
+          common with security systems.</p>
       </div>
       <br>
-
-      <div id="intro">
-        <p>I am choosing to make selecting the menu more dramatic by having a focused state when it is hovered over. 
-          When the dropdown menu is selected, it will look pressed. When the menu is hovered on, the selected item
-           will have a red outline and a drop shadow. This increases learnability but may decrease efficiency since 
-           t might be distracting from the text on the actual document.</p>
-        <p>I added a lot of functionality with the keyboard that was not present initially. Originally, the up and 
-          down arrows didn’t control the menu, but the place of the cursor on the document. I changed it so that 
-          the arrows control how the menu is scrolled through, which is more beneficial for keyboard users. I am 
-          choosing an increase in accessibility even if it makes learnability a little less.</p>
-      </div>
-
-      <h2>Component Redesign- Original vs Redesign</h2>
-      <h3>Initial state</h3>
-      <div class="word-container">
-        <div><h3>Before</h3></div>
-        <div><h3>After</h3></div>
-      </div>
-      <div class="flex-container">
-        <div><img class="pageImage" src="./assets/before1.png"/></div>
-        <div><img class="tinyImage" src="./assets/zoom1.png"/></div>
-        <div><img class="pageImage" src="./assets/after1.png"/></div>
-        <div><img class="tinyImage" src="./assets/zoom2.png"/></div>
-      </div>
-      <br>
-      <h3>Active state</h3>
-      <div class="word-container">
-        <div><h3>Before</h3></div>
-        <div><h3>After</h3></div>
-      </div>
-      <div class="flex-container">
-        <div><img class="pageImage" src="./assets/before2.png"/></div>
-        <div><img class="pageImage" src="./assets/after2.png"/></div>
-      </div>
-      <br>
-
-      <div id="intro">
-        <p>I am redesigning the drop down menu from Pages. </p> 
-          
-        <p>In its initial state, there is a plus sign which 
-          shows the menu can be expanded to show options. </p> 
-
-        <p>In the state where the drop down is selected, the 
-          drop down looks pressed and the current option is focused with a red outline and a drop shadow. 
-          It is improved because the option that the mouse or keyboard is on looks selected. This version 
-          of the component affects learnability because wherever your mouse is on the menu is highlighted. 
-          This seemed like an obvious choice to make. The user just needs to remember a “+” means the menu 
-          can extend which is common in current day apps. 
-          
-          <p>This will be a big improvement to accessibility 
-          for when the keyboard is used. If you are using a keyboard, you will now be able to tab to the 
-          paragraph styles drop down, which would be more efficient.</p>
-      </div>
-
-      <div id="intro">
-        <h2>Reflection:</h2>
-        <p>Netflix did well by making then “Genre” category look different every state it was in. When it was 
-          hovered over, it was noticeable which makes it easier to track the cursor. I implemented this feature 
-          in my design for another application.</p>
-        <p>A text box on the Netflix website was transparent. The text stood out on the page but the text box was 
-          not filled, which makes me believe it might be hard to see in some cases. I chose a color that contrasted 
-          well with the background so it would stand out.</p>
-        <p>Most computer users in my generation are able to track their cursor and have precise control on their
-           mouse pad. Pages seems to be designed without others who cannot do this. Pages didn’t indicate if the
-            cursor was hovering over an option on the menu. I made this change so the cursor is easier to track. 
-            I also made it more visible when the drop down menu was selected.
-        </p>
-        <p>The VoiceOver function did not work with Pages well for people who needed to use the keyboard only
-           because the user couldn’t tab through the drop down menu. The drop down menu on Netflix was more 
-           accessible because you could use the arrows to scroll through the list.</p>
-        <p>I think people who could use the mouse are most prioritized. This would impact the user experience 
-          negatively if someone has limited mobility in their hands.</p>
-      </div>
-      <br>
-
-      <div id="intro">
-        <h2>Created by Gianna Aiello</h2>
-      </div>
-    </body>
+      
+      <h3>Created by Gianna Aiello</h3>
 
   </html>
