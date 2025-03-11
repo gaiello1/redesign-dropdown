@@ -1,238 +1,238 @@
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Dropdown Menu Redesign</title>
-      <!-- import CSS styles -->
-      <link rel="stylesheet" href="styles.css" /> 
-      <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Menu Redesign</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
+  </head>
+
+  <div class="header">
+    <h1>Accessible Components</h1>
+    <p>Redesigning a dropdown menu to be more accessible</p>
+  </div>
+
+
+  <!-- page content goes into <body> -->
   
-    <div class="header">
-      <h1>Accessible Components</h1>
-      <p>Redesigning a dropdown menu to be more accessible</p>
+  <body>
+    <div id="intro">
+      <h4>I will be exploring the accessibility factors of a dropdown menu in the following
+        applications:
+      </h4>
+      <h4>Netflix</h4>
+      <h4>Apple Pages</h4>
+      <h4>Google Calendar</h4>
     </div>
-  
-  
-    <!-- page content goes into <body> -->
     
-    <body>
-      <div id="intro">
-        <h4>I will be exploring the accessibility factors of a dropdown menu in the following
-          applications:
-        </h4>
-        <h4>Netflix</h4>
-        <h4>Apple Pages</h4>
-        <h4>Google Calendar</h4>
-      </div>
-      
-      <h2>Netflix</h2>
-      <div class="flex-container">
-        <div><img class="galleryImage" src="./assets/netflix1.png"/></div>
-        <div><img class="galleryImage" src="./assets/netflix2.png"/></div>
-        <div><img class="galleryImage" src="./assets/netflix3.png"/></div>
-      </div>
-      <br>
+    <h2>Netflix</h2>
+    <div class="flex-container">
+      <div><img class="galleryImage" src="./assets/netflix1.png"/></div>
+      <div><img class="galleryImage" src="./assets/netflix2.png"/></div>
+      <div><img class="galleryImage" src="./assets/netflix3.png"/></div>
+    </div>
+    <br>
 
-      <h2>Pages</h2>
-      <div class="flex-container">
-        <div><img class="pageImage" src="./assets/pages1.png"/></div>
-        <div><img class="pageImage" src="./assets/pages2.png"/></div>
-        <div><img class="pageImage" src="./assets/pages3.png"/></div>
-      </div>
-      <br>
+    <h2>Pages</h2>
+    <div class="flex-container">
+      <div><img class="pageImage" src="./assets/pages1.png"/></div>
+      <div><img class="pageImage" src="./assets/pages2.png"/></div>
+      <div><img class="pageImage" src="./assets/pages3.png"/></div>
+    </div>
+    <br>
 
-      <h2>Google Calendar</h2>
-      <div class="flex-container">
-        <div><img class="galleryImage" src="./assets/gcal1.png"/></div>
-        <div><img class="galleryImage" src="./assets/gcal2.png"/></div>
-        <div><img class="galleryImage" src="./assets/gcal3.png"/></div>
-      </div>
-      <br>
+    <h2>Google Calendar</h2>
+    <div class="flex-container">
+      <div><img class="galleryImage" src="./assets/gcal1.png"/></div>
+      <div><img class="galleryImage" src="./assets/gcal2.png"/></div>
+      <div><img class="galleryImage" src="./assets/gcal3.png"/></div>
+    </div>
+    <br>
 
-      <h2>Input:</h2>
-      <table>
-        <tr>
-          <th> </th>
-          <th>Google Calendar</th>
-          <th>Apple Pages</th>
-          <th>Netflix</th>
-        </tr>
-        <tr>
-          <th>Mouse/ Touchpad</th>
-          <td>There is no down arrow next to the time but it is boxed in some states.
-             In another state it does not seem like a drop down arrow will appear 
-             when you click on the time. However, to change the time you can click 
-             on a different time block in the calendar.</td>
-          <td>There is a down arrow next to the paragraph styles that makes it known 
-            that there will be a drop down menu.</td>
-          <td>There is a down arrow that makes it known that there will be a drop 
-            down menu if you want to select a genre.</td>
-        </tr>
-        <tr>
-          <th>Keyboard</th>
-          <td>When you click on the time dropdown menu and move the up and down arrows
-             it moves through the options.
-            When the menu is pressed and you press the escape key, the menu closes.
-            </td>
-          <td>When you click on the “Paragraph Styles” dropdown menu and move the up 
-            and down arrows it moves the document instead of scrolling through the menu.
-            When the menu is pressed and you press the escape key, the menu closes.
-            </td>
-          <td>When you click on the “Genres” dropdown menu and move the up and down arrows 
-            it moves the webpage instead of scrolling through the menu.
-            When the menu is pressed and you press the escape key, the menu does not close.
-            </td>
-        </tr>
-        <tr>
-          <th>Touch (if available)</th>
-          <td>You can also change the time of your event on the app by more precisely 
-            changing the size of the box that is on the calendar.</td>
-          <td>While you are typing, a bar on top of the keyboard comes up where you 
-            can edit the text like bold/ how it is aligned/ italicized/ and also how 
-            the text is styled.</td>
-          <td>There isn’t the same menu on the mobile version. There is a “TV Shows” 
-            and “Movies” option, then “Category”.</td>
-        </tr>
-      </table>
-      <br>
-
-      <h2>Output:</h2>
-      <table>
-        <tr>
-          <th> </th>
-          <th>Google Calendar</th>
-          <th>Apple Pages</th>
-          <th>Netflix</th>
-        </tr>
-        <tr>
-          <th>Hovering</th>
-          <td>When you hover over the time, the box becomes a shade darker making it 
-            look clickable. It also has a line underneath it depending on the state it was previously in.</td>
-          <td>Nothing changes when you hover over the box.</td>
-          <td>When you hover over the “Genres” box, it becomes transparent.</td>
-        </tr>
-        <tr>
-          <th>VoiceOver</th>
-          <td>When using VoiceOver, “9:15pm, Start time, menu pop up collapsed, combo box” when the start time 
-            is clicked, “10:15pm, End time, menu pop up expanded, combo box, Event, tab panel” when the end time is selected.
-            </td>
-          <td>When the application opens, the VoiceOver begins by reading the document, which isn’t the best. I tried clicking
-             around the edit text option to prompt it to read the options, and it did not. After I clicked the “Paragraph Styles”
-              option, the VoiceOver read “3 items Paragraph Styles”. This was not the most accessible because there are so many 
-              options to click on the page and it would be hard to know where this option was. 
-            </td>
-          <td>When you enter the Netflix website, the VoiceOver starts by reading the top menu bar from left to right. Then it 
-            moves to the line below the menu bar and reads after the “Movies” option “Genres, menu pop up collapsed, button”. 
-            This seemed like the most accessible since the user might not know where this option is.
-            </td>
-        </tr>
-        <tr>
-          <th>Cue to click/ Appearence</th>
-          <td>The time does not look clickable, it is in a smaller font and there is no box around it. I think one has to be told 
-            this to know it unless they try tapping all over the screen, but after that it is easy to remember.
+    <h2>Input:</h2>
+    <table>
+      <tr>
+        <th> </th>
+        <th>Google Calendar</th>
+        <th>Apple Pages</th>
+        <th>Netflix</th>
+      </tr>
+      <tr>
+        <th>Mouse/ Touchpad</th>
+        <td>There is no down arrow next to the time but it is boxed in some states.
+           In another state it does not seem like a drop down arrow will appear 
+           when you click on the time. However, to change the time you can click 
+           on a different time block in the calendar.</td>
+        <td>There is a down arrow next to the paragraph styles that makes it known 
+          that there will be a drop down menu.</td>
+        <td>There is a down arrow that makes it known that there will be a drop 
+          down menu if you want to select a genre.</td>
+      </tr>
+      <tr>
+        <th>Keyboard</th>
+        <td>When you click on the time dropdown menu and move the up and down arrows
+           it moves through the options.
+          When the menu is pressed and you press the escape key, the menu closes.
           </td>
-          <td>You have to click on the Paragraph Styles Icon, which is not labelled, to pull up the menu. I think one has to be 
-            told this to know it, but after that it is easy to remember.
-            <div><img class="smallImage" src="./assets/paragraph.png"/></div>
+        <td>When you click on the “Paragraph Styles” dropdown menu and move the up 
+          and down arrows it moves the document instead of scrolling through the menu.
+          When the menu is pressed and you press the escape key, the menu closes.
           </td>
-          <td>When you click on “Genres” a box is displayed with your selected choice. Then another menu comes up, “Category”. 
-            This was the most intuitive out of the three applications.</td>
-        </tr>
-      </table>
+        <td>When you click on the “Genres” dropdown menu and move the up and down arrows 
+          it moves the webpage instead of scrolling through the menu.
+          When the menu is pressed and you press the escape key, the menu does not close.
+          </td>
+      </tr>
+      <tr>
+        <th>Touch (if available)</th>
+        <td>You can also change the time of your event on the app by more precisely 
+          changing the size of the box that is on the calendar.</td>
+        <td>While you are typing, a bar on top of the keyboard comes up where you 
+          can edit the text like bold/ how it is aligned/ italicized/ and also how 
+          the text is styled.</td>
+        <td>There isn’t the same menu on the mobile version. There is a “TV Shows” 
+          and “Movies” option, then “Category”.</td>
+      </tr>
+    </table>
+    <br>
 
-      <h2>Current state models for the dropdown menu on Pages</h2>
-      <div class="flex-container">
-        <div><img class="galleryImage" src="./assets/state1.png"/></div>
-        <div><img class="galleryImage" src="./assets/state2.png"/></div>
-      </div>
-      <br>
+    <h2>Output:</h2>
+    <table>
+      <tr>
+        <th> </th>
+        <th>Google Calendar</th>
+        <th>Apple Pages</th>
+        <th>Netflix</th>
+      </tr>
+      <tr>
+        <th>Hovering</th>
+        <td>When you hover over the time, the box becomes a shade darker making it 
+          look clickable. It also has a line underneath it depending on the state it was previously in.</td>
+        <td>Nothing changes when you hover over the box.</td>
+        <td>When you hover over the “Genres” box, it becomes transparent.</td>
+      </tr>
+      <tr>
+        <th>VoiceOver</th>
+        <td>When using VoiceOver, “9:15pm, Start time, menu pop up collapsed, combo box” when the start time 
+          is clicked, “10:15pm, End time, menu pop up expanded, combo box, Event, tab panel” when the end time is selected.
+          </td>
+        <td>When the application opens, the VoiceOver begins by reading the document, which isn’t the best. I tried clicking
+           around the edit text option to prompt it to read the options, and it did not. After I clicked the “Paragraph Styles”
+            option, the VoiceOver read “3 items Paragraph Styles”. This was not the most accessible because there are so many 
+            options to click on the page and it would be hard to know where this option was. 
+          </td>
+        <td>When you enter the Netflix website, the VoiceOver starts by reading the top menu bar from left to right. Then it 
+          moves to the line below the menu bar and reads after the “Movies” option “Genres, menu pop up collapsed, button”. 
+          This seemed like the most accessible since the user might not know where this option is.
+          </td>
+      </tr>
+      <tr>
+        <th>Cue to click/ Appearence</th>
+        <td>The time does not look clickable, it is in a smaller font and there is no box around it. I think one has to be told 
+          this to know it unless they try tapping all over the screen, but after that it is easy to remember.
+        </td>
+        <td>You have to click on the Paragraph Styles Icon, which is not labelled, to pull up the menu. I think one has to be 
+          told this to know it, but after that it is easy to remember.
+          <div><img class="smallImage" src="./assets/paragraph.png"/></div>
+        </td>
+        <td>When you click on “Genres” a box is displayed with your selected choice. Then another menu comes up, “Category”. 
+          This was the most intuitive out of the three applications.</td>
+      </tr>
+    </table>
 
-      <h2>Revised state models for the dropdown menu on Pages</h2>
-      <div class="flex-container">
-        <div><img class="galleryImage" src="./assets/state3.png"/></div>
-        <div><img class="galleryImage" src="./assets/state4.png"/></div>
-      </div>
-      <br>
+    <h2>Current state models for the dropdown menu on Pages</h2>
+    <div class="flex-container">
+      <div><img class="galleryImage" src="./assets/state1.png"/></div>
+      <div><img class="galleryImage" src="./assets/state2.png"/></div>
+    </div>
+    <br>
 
-      <div id="intro">
-        <p>I am choosing to make selecting the menu more dramatic by having a focused state when it is hovered over. 
-          When the dropdown menu is selected, it will look pressed. When the menu is hovered on, the selected item
-           will have a red outline and a drop shadow. This increases learnability but may decrease efficiency since 
-           t might be distracting from the text on the actual document.</p>
-        <p>I added a lot of functionality with the keyboard that was not present initially. Originally, the up and 
-          down arrows didn’t control the menu, but the place of the cursor on the document. I changed it so that 
-          the arrows control how the menu is scrolled through, which is more beneficial for keyboard users. I am 
-          choosing an increase in accessibility even if it makes learnability a little less.</p>
-      </div>
+    <h2>Revised state models for the dropdown menu on Pages</h2>
+    <div class="flex-container">
+      <div><img class="galleryImage" src="./assets/state3.png"/></div>
+      <div><img class="galleryImage" src="./assets/state4.png"/></div>
+    </div>
+    <br>
 
-      <h2>Component Redesign- Original vs Redesign</h2>
-      <h3>Initial state</h3>
-      <div class="word-container">
-        <div><h3>Before</h3></div>
-        <div><h3>After</h3></div>
-      </div>
-      <div class="flex-container">
-        <div><img class="pageImage" src="./assets/before1.png"/></div>
-        <div><img class="tinyImage" src="./assets/zoom1.png"/></div>
-        <div><img class="pageImage" src="./assets/after1.png"/></div>
-        <div><img class="tinyImage" src="./assets/zoom2.png"/></div>
-      </div>
-      <br>
-      <h3>Active state</h3>
-      <div class="word-container">
-        <div><h3>Before</h3></div>
-        <div><h3>After</h3></div>
-      </div>
-      <div class="flex-container">
-        <div><img class="pageImage" src="./assets/before2.png"/></div>
-        <div><img class="pageImage" src="./assets/after2.png"/></div>
-      </div>
-      <br>
+    <div id="intro">
+      <p>I am choosing to make selecting the menu more dramatic by having a focused state when it is hovered over. 
+        When the dropdown menu is selected, it will look pressed. When the menu is hovered on, the selected item
+         will have a red outline and a drop shadow. This increases learnability but may decrease efficiency since 
+         t might be distracting from the text on the actual document.</p>
+      <p>I added a lot of functionality with the keyboard that was not present initially. Originally, the up and 
+        down arrows didn’t control the menu, but the place of the cursor on the document. I changed it so that 
+        the arrows control how the menu is scrolled through, which is more beneficial for keyboard users. I am 
+        choosing an increase in accessibility even if it makes learnability a little less.</p>
+    </div>
 
-      <div id="intro">
-        <p>I am redesigning the drop down menu from Pages. </p> 
-          
-        <p>In its initial state, there is a plus sign which 
-          shows the menu can be expanded to show options. </p> 
+    <h2>Component Redesign- Original vs Redesign</h2>
+    <h3>Initial state</h3>
+    <div class="word-container">
+      <div><h3>Before</h3></div>
+      <div><h3>After</h3></div>
+    </div>
+    <div class="flex-container">
+      <div><img class="pageImage" src="./assets/before1.png"/></div>
+      <div><img class="tinyImage" src="./assets/zoom1.png"/></div>
+      <div><img class="pageImage" src="./assets/after1.png"/></div>
+      <div><img class="tinyImage" src="./assets/zoom2.png"/></div>
+    </div>
+    <br>
+    <h3>Active state</h3>
+    <div class="word-container">
+      <div><h3>Before</h3></div>
+      <div><h3>After</h3></div>
+    </div>
+    <div class="flex-container">
+      <div><img class="pageImage" src="./assets/before2.png"/></div>
+      <div><img class="pageImage" src="./assets/after2.png"/></div>
+    </div>
+    <br>
 
-        <p>In the state where the drop down is selected, the 
-          drop down looks pressed and the current option is focused with a red outline and a drop shadow. 
-          It is improved because the option that the mouse or keyboard is on looks selected. This version 
-          of the component affects learnability because wherever your mouse is on the menu is highlighted. 
-          This seemed like an obvious choice to make. The user just needs to remember a “+” means the menu 
-          can extend which is common in current day apps. 
-          
-          <p>This will be a big improvement to accessibility 
-          for when the keyboard is used. If you are using a keyboard, you will now be able to tab to the 
-          paragraph styles drop down, which would be more efficient.</p>
-      </div>
+    <div id="intro">
+      <p>I am redesigning the drop down menu from Pages. </p> 
+        
+      <p>In its initial state, there is a plus sign which 
+        shows the menu can be expanded to show options. </p> 
 
-      <div id="intro">
-        <h2>Reflection:</h2>
-        <p>Netflix did well by making then “Genre” category look different every state it was in. When it was 
-          hovered over, it was noticeable which makes it easier to track the cursor. I implemented this feature 
-          in my design for another application.</p>
-        <p>A text box on the Netflix website was transparent. The text stood out on the page but the text box was 
-          not filled, which makes me believe it might be hard to see in some cases. I chose a color that contrasted 
-          well with the background so it would stand out.</p>
-        <p>Most computer users in my generation are able to track their cursor and have precise control on their
-           mouse pad. Pages seems to be designed without others who cannot do this. Pages didn’t indicate if the
-            cursor was hovering over an option on the menu. I made this change so the cursor is easier to track. 
-            I also made it more visible when the drop down menu was selected.
-        </p>
-        <p>The VoiceOver function did not work with Pages well for people who needed to use the keyboard only
-           because the user couldn’t tab through the drop down menu. The drop down menu on Netflix was more 
-           accessible because you could use the arrows to scroll through the list.</p>
-        <p>I think people who could use the mouse are most prioritized. This would impact the user experience 
-          negatively if someone has limited mobility in their hands.</p>
-      </div>
-      <br>
+      <p>In the state where the drop down is selected, the 
+        drop down looks pressed and the current option is focused with a red outline and a drop shadow. 
+        It is improved because the option that the mouse or keyboard is on looks selected. This version 
+        of the component affects learnability because wherever your mouse is on the menu is highlighted. 
+        This seemed like an obvious choice to make. The user just needs to remember a “+” means the menu 
+        can extend which is common in current day apps. 
+        
+        <p>This will be a big improvement to accessibility 
+        for when the keyboard is used. If you are using a keyboard, you will now be able to tab to the 
+        paragraph styles drop down, which would be more efficient.</p>
+    </div>
 
-      <div id="intro">
-        <h2>Created by Gianna Aiello</h2>
-      </div>
-    </body>
+    <div id="intro">
+      <h2>Reflection:</h2>
+      <p>Netflix did well by making then “Genre” category look different every state it was in. When it was 
+        hovered over, it was noticeable which makes it easier to track the cursor. I implemented this feature 
+        in my design for another application.</p>
+      <p>A text box on the Netflix website was transparent. The text stood out on the page but the text box was 
+        not filled, which makes me believe it might be hard to see in some cases. I chose a color that contrasted 
+        well with the background so it would stand out.</p>
+      <p>Most computer users in my generation are able to track their cursor and have precise control on their
+         mouse pad. Pages seems to be designed without others who cannot do this. Pages didn’t indicate if the
+          cursor was hovering over an option on the menu. I made this change so the cursor is easier to track. 
+          I also made it more visible when the drop down menu was selected.
+      </p>
+      <p>The VoiceOver function did not work with Pages well for people who needed to use the keyboard only
+         because the user couldn’t tab through the drop down menu. The drop down menu on Netflix was more 
+         accessible because you could use the arrows to scroll through the list.</p>
+      <p>I think people who could use the mouse are most prioritized. This would impact the user experience 
+        negatively if someone has limited mobility in their hands.</p>
+    </div>
+    <br>
 
-  </html>
+    <div id="intro">
+      <h2>Created by Gianna Aiello</h2>
+    </div>
+  </body>
+
+</html>
